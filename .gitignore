@@ -4,3 +4,4 @@ ulix-server.vcxproj
 ulix-server.vcxproj.filters
 ulix-server.vcxproj.user
 x64/Debug
+ulix-server/x64/Debug

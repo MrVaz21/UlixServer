@@ -52,21 +52,6 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     response = s.recv(4096).decode()
     print(response)  # Вывод: ok|ascii|text\n2025-09-04 12:34:56
 
-Структура проекта
-
-ulix-server/
-├── ulix-server.sln          # Решение Visual Studio
-├── www/                     # Статические файлы (HTML, CSS, JS)
-│   └── index.html
-├── ulix-server/             # Исходный код сервера
-│   ├── main.cpp             # Точка входа и TCP-сервер
-│   ├── ulix_request.cpp     # Класс парсинга запросов
-│   ├── ulix_response.cpp    # Класс формирования ответов
-│   ├── simple_handler.cpp   # Обработка бизнес-логики
-│   └── strutil_lib.h        # Утилиты для работы со строками
-├── client.py                # Тестовый клиент на Python
-└── README.md
-
 Тестирование
 
 Получение файла:
